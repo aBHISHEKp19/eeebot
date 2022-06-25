@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/aBHISHEKp19/eeebot/issues"
   },
-  "homepage": "https://github.com/aBHISHEKp19/eeebot#readme"
+  "homepage": "https://github.com/aBHISHEKp19/eeebot#readme",
+  "dependencies": {
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1"
+  }
 }
