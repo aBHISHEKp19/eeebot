@@ -12,16 +12,14 @@ client.once('ready', () => {
 const prefix = 'eee.';
 
 client.on('messageCreate', message => {
-    if(message.mentions.users.bot) return;
-    if (message.author.id != Id) {return message.reply('Only APPY is Allowed to Use this Command')}
-    
-    if (message.content === prefix + 'start') {
+
+   /* if (message.content === prefix + 'start') {
         var interval = setInterval(function () {
 
             message.channel.send("East or west EEE is the best")
                 .catch(console.error); // add error handling here
         }, 5 * 1000);
-    }
+    }*/
     /*
 
     setTimeout(function () {
