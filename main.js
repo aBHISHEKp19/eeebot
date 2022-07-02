@@ -12,6 +12,7 @@ client.once('ready', () => {
 const prefix = 'eee.';
 
 client.on('messageCreate', message => {
+    if(message.mentions.users.bot) return;
     if (message.author.id != Id) {return message.reply('Only APPY is Allowed to Use this Command')}
     
     if (message.content === prefix + 'start') {
