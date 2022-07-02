@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const { joinVoiceChannel } = require('@discordjs/voice');
 const client = new Discord.Client({ intents: 32767 });
 require('dotenv').config();
+const Id = "910239243371163698";
 
 client.once('ready', () => {
     console.log('EEE is here');
@@ -11,7 +12,8 @@ client.once('ready', () => {
 const prefix = 'eee.';
 
 client.on('messageCreate', message => {
-
+    if (message.author.id != Id) return message.reply('Only APPY is Allowed to Use this Command')
+    
     if (message.content === prefix + 'start') {
         var interval = setInterval(function () {
 
@@ -38,7 +40,7 @@ client.on('messageCreate', message => {
             channelId: message.member.voice.channel.id,
             guildId: message.guild.id,
             adapterCreator: message.guild.voiceAdapterCreator,
-
+        
         })
     }
 
