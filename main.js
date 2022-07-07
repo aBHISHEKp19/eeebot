@@ -13,6 +13,12 @@ const prefix = 'eee.';
 
 client.on('messageCreate', message => {
 
+    if (message.content === 'kys'){
+
+message.channel.send("cringe kys");
+
+    }
+
    /* if (message.content === prefix + 'start') {
         var interval = setInterval(function () {
 
