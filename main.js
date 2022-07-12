@@ -13,7 +13,7 @@ const prefix = 'eee.';
 
 client.on('messageCreate', message => {
 
-    if (message.content === 'kys'){
+    if (message.content === 'kys' || message.content === 'Kys'){
 
 message.channel.send("cringe kys");
 
