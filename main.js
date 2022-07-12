@@ -13,19 +13,24 @@ const prefix = 'eee.';
 
 client.on('messageCreate', message => {
 
-    if (message.content === 'kys' || message.content === 'Kys'){
+    if (message.content === 'kys') {
 
-message.channel.send("cringe kys");
+        message.reply("gimme ur mum");
+
+    }
+    if (message.content === 'Kys') {
+
+        message.channel.send(`gimme ur mom <@${message.author.id}>`);
 
     }
 
-   /* if (message.content === prefix + 'start') {
-        var interval = setInterval(function () {
-
-            message.channel.send("East or west EEE is the best")
-                .catch(console.error); // add error handling here
-        }, 5 * 1000);
-    }*/
+    /* if (message.content === prefix + 'start') {
+         var interval = setInterval(function () {
+ 
+             message.channel.send("East or west EEE is the best")
+                 .catch(console.error); // add error handling here
+         }, 5 * 1000);
+     }*/
     /*
 
     setTimeout(function () {
@@ -37,7 +42,7 @@ message.channel.send("cringe kys");
     }, 5000);*/
     if (message.content === prefix + 'join') {
         if (!joinVoiceChannel) return message.channel.send('You need to be in a channel to execute this command!');
-       // if (!args[0]) return message.channel.send("lol");
+        // if (!args[0]) return message.channel.send("lol");
 
         const connection = joinVoiceChannel({
 
@@ -45,7 +50,7 @@ message.channel.send("cringe kys");
             channelId: message.member.voice.channel.id,
             guildId: message.guild.id,
             adapterCreator: message.guild.voiceAdapterCreator,
-        
+
         })
     }
 
