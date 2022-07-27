@@ -23,6 +23,11 @@ client.on('messageCreate', message => {
         message.channel.send(`gimme ur mom <@${message.author.id}>`);
 
     }
+    if (message.content === prefix + 'fuckoff') {
+
+        message.channel.send(`fuck you too <@${message.author.id}>`);
+
+    }
 
     /* if (message.content === prefix + 'start') {
          var interval = setInterval(function () {
