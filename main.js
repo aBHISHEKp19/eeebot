@@ -25,7 +25,7 @@ client.on('messageCreate', message => {
     }
     if (message.content === prefix + 'fuckoff') {
 
-        message.channel.send(`fuck you too <@${message.author.id}>`);
+        message.channel.send(`fuck you <@${message.author.id}>`);
 
     }
 
